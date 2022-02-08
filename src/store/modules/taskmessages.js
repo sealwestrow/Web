@@ -25,7 +25,6 @@ const actions = {
       axios({ url: url, method: 'GET' })
         .then(resp => {
           commit(MESSAGES_SUCCESS, resp)
-          //  console.log(resp)
           resolve(resp)
         }).catch(err => {
           commit(MESSAGES_ERROR, err)
